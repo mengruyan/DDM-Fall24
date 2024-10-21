@@ -1,0 +1,27 @@
+Becoming a Data Scientist: Beginner Git and GitHub by Nathan Williams
+https://www.youtube.com/watch?v=cwv4HaPZQRU
+
+git init # initialize a repository
+git status # check commits
+git add fileName # add file to the repository from working directory
+git rm --cached fileName # remove file from repository to working directory
+git add . # add all the files to be committed
+git commit -m "initial commit"  # add comments
+git log  # see commit
+git log --oneline ## short log
+
+local --> remote
+
+git remote add origin git@github.com:mengruyan/Data-Management.git # set origin variable
+
+git branch # create a branch
+git branch -M main  # rename the current branch to main.
+git push -u origin main
+ 
+git clone demo (master)  # copy
+git clone https://github.com/mengruyan/GitHub-Demo.git
+
+git remote remove origin # remove remote origin
+
+git clone demo (master)  # copy
+git clone https://github.com/Haiying58/GitHub-Demo.git
