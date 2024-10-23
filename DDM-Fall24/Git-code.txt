@@ -19,9 +19,30 @@ git branch -M main  # rename the current branch to main.
 git push -u origin main
  
 git clone demo (master)  # copy
-git clone https://github.com/mengruyan/GitHub-Demo.git
+git clone https://github.com/mengruyan/DDM-Fall24.git
 
 git remote remove origin # remove remote origin
 
 git clone demo (master)  # copy
-git clone https://github.com/Haiying58/GitHub-Demo.git
+git clone https://github.com/mengruyan/DDM-Fall24.git
+
+
+++++++++++ Git remote URL +++++++
+git remote -v ## check your git: URL or SSH; If it is SSH, follow the steps below:
+
+++++++ SSH Key ++++++
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+eval $(ssh-agent -s) # Start the SSH agent
+
+ssh-add ~/.ssh/id_rsa  # Add your SSH private key to the agent
+
+cat ~/.ssh/id_rsa.pub # Copy the contents of your public key and paste it to SSH keys under settings
+
+ssh -T git@github.com # test if your SSH key is set up correctly
+
++++++ set your global username and email in Git for GitHub +++
+git config --global user.name "Your GitHub Username"
+git config --global user.email "your.email@example.com"
+git config --global --list # check whether it is correct
+
